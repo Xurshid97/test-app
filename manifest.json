@@ -1,0 +1,27 @@
+{
+  "name": "test-app",
+  "title": "Test app",
+  "description": "A simple app for managing projects",
+  "$schema": "https://json.schemastore.org/youtrack-app.json",
+  "vendor": {
+    "name": "Khurshidjon Sharopov",
+    "url": "https://github.com/Xurshid97/test-app.git"
+  },
+  "icon": "icon.svg",
+  "widgets": [
+
+    {
+      "key": "test-main-menu-item",
+      "name": "Test-Main-Menu-Item",
+      "indexPath": "test-main-menu-item/index.html",
+      "extensionPoint": "ADMINISTRATION_MENU_ITEM",
+      "iconPath": "test-main-menu-item/widget-icon.svg",
+      "description": "test main menu item for you track",
+      "permissions": [],
+      "expectedDimensions": {
+        "width": 800,
+        "height": 600
+      }
+    }
+  ]
+}
