@@ -1,23 +1,27 @@
 {
+  "id": "test-app",
   "name": "test-app",
   "title": "Test app",
-  "description": "A simple app for managing projects",
+  "description": "A simple app for managing a test flag and viewing projects",
   "$schema": "https://json.schemastore.org/youtrack-app.json",
+  "version": "1.0.0",
+  "minYouTrackVersion": "2022.2.0",
+  "maxYouTrackVersion": "2025.3.105322",
   "vendor": {
     "name": "Khurshidjon Sharopov",
-    "url": "https://github.com/Xurshid97/test-app.git"
+    "url": "https://github.com/Xurshid97/test-app"
   },
+  "url": "https://github.com/Xurshid97/test-app",
   "icon": "icon.svg",
+  "permissions": ["PROJECT_READ", "ADMIN_READ_APP", "ADMIN_UPDATE_APP"],
   "widgets": [
-
     {
       "key": "test-main-menu-item",
-      "name": "Test-Main-Menu-Item",
-      "indexPath": "test-main-menu-item/index.html",
-      "extensionPoint": "ADMINISTRATION_MENU_ITEM",
-      "iconPath": "test-main-menu-item/widget-icon.svg",
-      "description": "test main menu item for you track",
-      "permissions": [],
+      "name": "Test Management",
+      "indexPath": "widgets/test-main-menu-item/index.html",
+      "extensionPoint": "MAIN_MENU_ITEM",
+      "iconPath": "widgets/test-main-menu-item/widget-icon.svg",
+      "description": "Page for listing projects and toggling a test flag",
       "expectedDimensions": {
         "width": 800,
         "height": 600
