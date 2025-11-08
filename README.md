@@ -1,8 +1,7 @@
 # YouTrack MAIN_MENU_ITEM App Example
 
-<!-- highlight -->
-test-app.zip included in root directory and can be found from releases.
-<!-- endhighlight -->
+⚡ **`test-app.zip`** is included in the Releases section.
+
 
 A simple YouTrack app demonstrating how to create a main menu item using the YouTrack App SDK.
 The app fetches and displays a list of projects from your YouTrack instance and allows toggling a test feature per project.
